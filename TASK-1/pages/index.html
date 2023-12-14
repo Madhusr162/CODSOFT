@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        /*added hover effect and animation for the card*/
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            background-color: beige;
+            animation-name: bounce;
+            animation-duration: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Header Code-->
+        <div id="header">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                $(function () {
+                    $("#header").load('header.html');
+                })
+            </script>
+        </div>
+        <img src="../images/bgimg.png" class="img-fluid" alt="home screen image" width="1420px" height="700px">
+        <!--Featured product Code-->
+        <div id="featuredProduct">
+            <script>
+                $(function () {
+                    $("#featuredProduct").load('featuredproducts.html');
+                })
+            </script>
+        </div>
+
+        <!--Footer Code-->
+        <div id="footer">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                $(function () {
+                    $("#footer").load('footer.html');
+                })
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
